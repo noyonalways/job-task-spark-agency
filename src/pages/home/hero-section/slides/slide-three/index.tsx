@@ -3,7 +3,7 @@ import logo from "../../../../../assets/logo.png";
 const SlideThree = () => {
   return (
     <div
-      className={`bg-[url('/banner/3.jpg')] h-screen bg-center lg:bg-top bg-cover bg-no-repeat relative overflow-hidden`}
+      className={`bg-[url('/banner/3.jpg')] h-screen bg-center lg:bg-top bg-cover bg-no-repeat relative overflow-hidden min-w-full`}
     >
       <div className="container">
         <div className="py-4 lg:py-10 flex flex-col justify-between w-full h-screen">

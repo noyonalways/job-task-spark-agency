@@ -3,7 +3,7 @@ import logo from "../../../../../assets/logo.png";
 const SlideFive = () => {
   return (
     <div
-      className={`bg-[url('/banner/5.jpg')] h-screen bg-center lg:bg-top bg-cover bg-no-repeat relative overflow-hidden`}
+      className={`bg-[url('/banner/5.jpg')] h-screen bg-center lg:bg-top bg-cover bg-no-repeat relative overflow-hidden min-w-full`}
     >
       <div className="container">
         <div className="py-4 lg:py-10">
@@ -16,7 +16,7 @@ const SlideFive = () => {
             </a>
 
             {/* nav links */}
-            <ul className="flex items-center font-tiltWrap text-white space-x-4">
+            <ul className="hidden lg:flex items-center font-tiltWrap text-white space-x-4">
               <li>
                 <a className="hover:underline px-6" href="#">
                   Diensten
@@ -34,7 +34,7 @@ const SlideFive = () => {
               </li>
             </ul>
 
-            <div className="flex items-center space-x-1 text-white">
+            <div className="hidden lg:flex items-center space-x-1 text-white">
               <div className="flex items-center space-x-1">
                 <span>Spoed?</span>
                 <a className="hover:underline" href="#">
@@ -50,7 +50,7 @@ const SlideFive = () => {
           </div>
 
           {/* main content */}
-          <div className="flex lg:space-x-16 items-center h-screen">
+          <div className="flex flex-col mt-20 lg:mt-0 lg:flex-row lg:space-x-16 lg:items-center lg:h-screen">
             <div className="w-full lg:max-w-2xl space-y-4">
               <h1 className="font-tiltWrap text-3xl lg:text-6xl text-white !leading-tight">
                 Wij bieden een duurzame en passende oplossing voor uw klus.
