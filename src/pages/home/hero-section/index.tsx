@@ -1,3 +1,5 @@
+import { Scrollbar } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import SlideEight from "./slides/slide-eight";
 import SlideFive from "./slides/slide-five";
 import SlideFour from "./slides/slide-four";
@@ -7,20 +9,62 @@ import SlideSix from "./slides/slide-six";
 import SlideThree from "./slides/slide-three";
 import SlideTwo from "./slides/slide-two";
 
+// Import Swiper styles
+import "swiper/swiper-bundle.css";
+
+const slides = [
+  {
+    id: "slide-001",
+    component: SlideOne,
+  },
+  {
+    id: "slide-002",
+    component: SlideTwo,
+  },
+  {
+    id: "slide-003",
+    component: SlideThree,
+  },
+  {
+    id: "slide-004",
+    component: SlideFour,
+  },
+  {
+    id: "slide-005",
+    component: SlideFive,
+  },
+  {
+    id: "slide-006",
+    component: SlideSix,
+  },
+  {
+    id: "slide-007",
+    component: SlideSeven,
+  },
+  {
+    id: "slide-008",
+    component: SlideEight,
+  },
+];
+
 const HeroSection = () => {
   return (
-    <div className="max-w-full overflow-x-auto">
-      <div className="flex">
-        <SlideOne />
-        <SlideTwo />
-        <SlideThree />
-        <SlideFour />
-        <SlideFive />
-        <SlideSix />
-        <SlideSeven />
-        <SlideEight />
-      </div>
-    </div>
+    <>
+      <Swiper
+        grabCursor={true}
+        scrollbar={{
+          hide: true,
+        }}
+        modules={[Scrollbar]}
+        className="mySwiper"
+      >
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <slide.component />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
 

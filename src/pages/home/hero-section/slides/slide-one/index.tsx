@@ -7,7 +7,7 @@ import topPro from "../../../../../assets/stickers/top-pro.png";
 const SlideOne = () => {
   return (
     <div
-      className={`bg-[url('/banner/1.jpg')] h-screen bg-cover bg-no-repeat relative overflow-hidden min-w-full`}
+      className={`bg-[url('/banner/1.jpg')] h-screen lg:bg-cover bg-no-repeat relative overflow-hidden min-w-full`}
     >
       {/* hand message */}
       <img

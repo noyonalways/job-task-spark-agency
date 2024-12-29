@@ -1,4 +1,6 @@
+import Footer from "../../shared/footer";
 import AboutUs from "./about-us";
+import FeaturedSection from "./featured-section";
 import HeroSection from "./hero-section";
 
 const HomePage = () => {
@@ -6,6 +8,8 @@ const HomePage = () => {
     <div>
       <HeroSection />
       <AboutUs />
+      <FeaturedSection />
+      <Footer />
     </div>
   );
 };

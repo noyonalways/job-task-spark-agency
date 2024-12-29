@@ -3,7 +3,7 @@ import logo from "../../../../../assets/logo.png";
 const SlideEight = () => {
   return (
     <div
-      className={`bg-[url('/banner/8.jpg')] h-screen bg-contain bg-left-top bg-no-repeat relative overflow-hidden min-w-full`}
+      className={`bg-[url('/banner/8.jpg')] lg:h-screen bg-contain bg-left-top bg-no-repeat relative overflow-hidden min-w-full`}
     >
       <div className="container">
         <div className="py-4 lg:py-10">
@@ -12,7 +12,7 @@ const SlideEight = () => {
           </a>
 
           {/* main content */}
-          <div className="flex flex-col lg:flex-row items-center lg:space-x-28 h-screen mt-10 lg:mt-0">
+          <div className="flex flex-col lg:flex-row items-center lg:space-x-28 lg:h-screen mt-10 lg:mt-0">
             <div className="space-y-2 flex flex-col basis-[45%]">
               <h3 className="text-white text-2xl font-tiltWrap">Uw adres</h3>
               <p className="font-actor text-gray-100 text-base">
