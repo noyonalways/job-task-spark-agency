@@ -12,7 +12,7 @@ const SlideSeven = () => {
           </a>
 
           {/* main content */}
-          <div className="flex flex-col mt-20 lg:mt-0 lg:justify-between">
+          <div className="flex flex-col lg:flex-row mt-20 lg:mt-0 lg:justify-between">
             <div className="w-full lg:max-w-2xl space-y-4">
               <h1 className="font-tiltWrap text-3xl lg:text-6xl text-white !leading-tight">
                 Wij bieden een duurzame en passende oplossing voor uw klus.
@@ -29,6 +29,7 @@ const SlideSeven = () => {
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
+              <button className="w-44 h-8 bg-[#1677FF] rounded-full"></button>
             </div>
           </div>
         </div>

@@ -20,7 +20,7 @@ const SlideSix = () => {
             </div>
 
             <div className="space-y-2 flex flex-col w-full lg:max-w-xl">
-              <p className="font-actor text-gray-100 text-base">
+              <p className="font-actor text-gray-100 text-base text-right">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud. Lorem ipsum dolor sit amet,
@@ -29,6 +29,7 @@ const SlideSix = () => {
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
+              <button className="w-44 h-8 bg-[#1677FF] rounded-full self-end"></button>
             </div>
           </div>
         </div>

@@ -1,4 +1,7 @@
+import avatar from "../../../../../assets/avatar.jpg";
+import box from "../../../../../assets/box.png";
 import handMessage from "../../../../../assets/images/hand-message.png";
+import line from "../../../../../assets/line.png";
 import logo from "../../../../../assets/logo.png";
 import tenYearsWarranty from "../../../../../assets/stickers/10-years.png";
 import google from "../../../../../assets/stickers/google.png";
@@ -7,7 +10,7 @@ import topPro from "../../../../../assets/stickers/top-pro.png";
 const SlideOne = () => {
   return (
     <div
-      className={`bg-[url('/banner/1.jpg')] h-screen lg:bg-cover bg-no-repeat relative overflow-hidden min-w-full`}
+      className={`bg-[url('/banner/1.jpg')] lg:h-screen bg-cover bg-no-repeat relative overflow-hidden min-w-full`}
     >
       {/* hand message */}
       <img
@@ -21,7 +24,127 @@ const SlideOne = () => {
           <a className="w-full max-w-[200px] lg:max-w-sm inline-block" href="#">
             <img className="logo" src={logo} alt="Spark Agency Logo" />
           </a>
-          {/* scroll content */}
+
+          {/* cards */}
+          <div className="absolute top-[50%] -translate-y-[50%] w-full left-0">
+            <div className="grid lg:grid-cols-2 justify-evenly w-full md:pl-12 lg:pl-96 gap-5">
+              <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
+                <div className="flex flex-col items-end flex-1">
+                  <h5 className="text-[#000000] font-semibold text-xl">
+                    Fermin Vargas
+                  </h5>
+                  <p className="text-[#78858F] text-base text-right">
+                    Construction <br /> manager
+                  </p>
+                </div>
+                <img
+                  className="object-cover w-[107px] h-[97px] rounded-r-2xl"
+                  src={avatar}
+                  alt="avatar"
+                />
+              </div>
+              <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
+                <div className="flex flex-col items-end flex-1">
+                  <h5 className="text-[#000000] font-semibold text-xl">
+                    Fermin Vargas
+                  </h5>
+                  <p className="text-[#78858F] text-base text-right">
+                    Construction <br /> manager
+                  </p>
+                </div>
+                <img
+                  className="object-cover w-[107px] h-[97px] rounded-r-2xl"
+                  src={avatar}
+                  alt="avatar"
+                />
+              </div>
+            </div>
+
+            <div className="hidden lg:flex my-4">
+              <div>
+                <img src={line} alt="image" />
+                <div className="flex justify-end">
+                  <img src={box} alt="" />
+                </div>
+              </div>
+              <div>
+                <img src={line} alt="image" />
+                <div className="flex justify-end">
+                  <img src={box} alt="" />
+                </div>
+              </div>
+              <div>
+                <img src={line} alt="image" />
+                <div className="flex justify-end">
+                  <img src={box} alt="" />
+                </div>
+              </div>
+              <div>
+                <img src={line} alt="image" />
+                <div className="flex justify-end">
+                  <img src={box} alt="" />
+                </div>
+              </div>
+              <div>
+                <img src={line} alt="image" />
+                <div className="flex justify-end">
+                  <img src={box} alt="" />
+                </div>
+              </div>
+              <div>
+                <img src={line} alt="image" />
+              </div>
+            </div>
+
+            <div className="hidden lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:justify-between w-full md:pl-12">
+              <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6">
+                <div className="flex flex-col items-end flex-1">
+                  <h5 className="text-[#000000] font-semibold text-xl">
+                    Fermin Vargas
+                  </h5>
+                  <p className="text-[#78858F] text-base text-right">
+                    Construction <br /> manager
+                  </p>
+                </div>
+                <img
+                  className="object-cover w-[107px] h-[97px] rounded-r-2xl"
+                  src={avatar}
+                  alt="avatar"
+                />
+              </div>
+              <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6 ml-40">
+                <div className="flex flex-col items-end flex-1">
+                  <h5 className="text-[#000000] font-semibold text-xl">
+                    Fermin Vargas
+                  </h5>
+                  <p className="text-[#78858F] text-base text-right">
+                    Construction <br /> manager
+                  </p>
+                </div>
+                <img
+                  className="object-cover w-[107px] h-[97px] rounded-r-2xl"
+                  src={avatar}
+                  alt="avatar"
+                />
+              </div>
+              <div className="bg-white rounded-2xl flex justify-between items-center w-[290px] h-[97px] gap-6 ml-48 mt-10 lg:mt-0">
+                <div className="flex flex-col items-end flex-1">
+                  <h5 className="text-[#000000] font-semibold text-xl">
+                    Fermin Vargas
+                  </h5>
+                  <p className="text-[#78858F] text-base text-right">
+                    Construction <br /> manager
+                  </p>
+                </div>
+                <img
+                  className="object-cover w-[107px] h-[97px] rounded-r-2xl"
+                  src={avatar}
+                  alt="avatar"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="hidden">
             <h1 className="text-3xl font-bold">
               We Are Spark Agency, Your Comprehensive Solution

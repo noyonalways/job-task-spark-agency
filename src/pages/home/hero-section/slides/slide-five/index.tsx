@@ -71,9 +71,7 @@ const SlideFive = () => {
                 name="search"
                 id="search"
               />
-              <button className="px-10 py-2 bg-blue-600 rounded-full font-semibold text-white self-end">
-                Search
-              </button>
+              <button className="w-44 h-8 bg-[#1677FF] rounded-full self-end !mt-4 inline-block"></button>
             </div>
           </div>
         </div>

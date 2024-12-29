@@ -41,7 +41,7 @@ const FeaturedSection = () => {
                 // For large screens (desktops)
                 1024: {
                   slidesPerView: 3, // Show 3 slides
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                   coverflowEffect: {
                     rotate: -30,
                     stretch: 0,
@@ -59,7 +59,7 @@ const FeaturedSection = () => {
               {carouselImages.map((item) => (
                 <SwiperSlide className="lg:my-10" key={item.id}>
                   <img
-                    className="w-full lg:max-w-md max-h-[500px] lg:max-h-[560px] object-cover rounded-lg"
+                    className="w-full mx-auto lg:max-w-md max-h-[480px] lg:max-h-[500px] object-cover rounded-lg"
                     src={item.src}
                     alt={item.alt}
                   />

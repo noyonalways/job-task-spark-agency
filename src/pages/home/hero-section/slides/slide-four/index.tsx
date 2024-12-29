@@ -26,6 +26,7 @@ const SlideFour = () => {
                 nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.
               </p>
+              <button className="w-44 h-8 bg-[#1677FF] rounded-full"></button>
             </div>
           </div>
         </div>
