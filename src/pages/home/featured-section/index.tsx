@@ -20,6 +20,8 @@ const carousel: KeenSliderPlugin = (slider) => {
   slider.on("detailsChanged", rotate);
 };
 
+const sliderInterval = 3000;
+
 const FeaturedSection = () => {
   const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
     {
@@ -34,7 +36,6 @@ const FeaturedSection = () => {
 
   const autoplayRef = useRef<number | null>(null);
 
-  // Autoplay functionality
   useEffect(() => {
     const slider = instanceRef.current;
     if (!slider) return;
@@ -43,7 +44,7 @@ const FeaturedSection = () => {
       if (slider) {
         slider.next(); // Moves to the next slide
       }
-    }, 3000); // Change slide every 3 seconds
+    }, sliderInterval);
 
     return () => {
       if (autoplayRef.current !== null) {
