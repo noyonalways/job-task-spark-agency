@@ -26,6 +26,7 @@ const FeaturedSection = () => {
       selector: ".carousel__cell",
       renderMode: "custom",
       mode: "free-snap",
+      drag: true,
     },
     [carousel]
   );
@@ -33,18 +34,17 @@ const FeaturedSection = () => {
   return (
     <section className="py-10">
       <div className="container mb-16">
-        <div>
+        <div className="overflow-hidden">
           <div className="wrapper">
             <div className="scene">
               <div className="carousel keen-slider" ref={sliderRef}>
                 {carouselImages?.map((item, index) => (
                   <div key={item.id} className={`carousel__cell`}>
                     <img
-                      className="rounded-xl"
+                      className="rounded-xl w-full h-full object-cover"
                       src={item.src}
                       alt={item.alt || `Slide ${index + 1}`}
                     />
-                    <span>{item.id}</span>
                   </div>
                 ))}
               </div>

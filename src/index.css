@@ -8,11 +8,11 @@
     justify-content: center;
   }
   .scene {
-    width: 360px;
-    height: 200px;
+    width: 340px;
+    height: 400px;
     perspective: 1000px;
     position: relative;
-    @apply mb-[300px];
+    @apply mb-[100px];
   }
   .scene .carousel.keen-slider {
     width: 100%;
@@ -23,7 +23,7 @@
     transform-style: preserve-3d;
   }
   .carousel__cell {
-    @apply w-[280px] md:w-[340px] !h-[400px] overflow-hidden rounded-xl cursor-pointer !bg-red-300;
+    @apply w-[260px] md:w-[340px] !h-[400px] overflow-hidden rounded-xl cursor-pointer;
     position: absolute;
     left: 10px;
   }
