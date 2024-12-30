@@ -7,6 +7,9 @@ import img6 from "../assets/carousel/6.jpg";
 import img7 from "../assets/carousel/7.jpg";
 import img8 from "../assets/carousel/8.jpg";
 
+import logo2 from "../assets/logo-2.png";
+import logo1 from "../assets/logo.png";
+
 export const carouselImages = [
   {
     id: "carousel-image-001",
@@ -49,3 +52,8 @@ export const carouselImages = [
     alt: "Carousel Image 8",
   },
 ];
+
+export const logos = {
+  logo1: logo1,
+  logo2: logo2,
+};

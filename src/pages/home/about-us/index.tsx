@@ -1,13 +1,12 @@
 import tenYearsWarranty from "../../../assets/stickers/10-years.png";
 import google from "../../../assets/stickers/google.png";
 import topPro from "../../../assets/stickers/top-pro.png";
+import Title from "../../../components/title";
 
 const AboutUs = () => {
   return (
     <section className="pb-10 pt-10">
-      <h1 className="text-[#11162E] text-6xl lg:text-[320px] font-nobile font-bold mb-2 lg:mb-4">
-        OVER ONS
-      </h1>
+      <Title>OVER ONS</Title>
       <div className="container">
         <div className="flex flex-col gap-y-10 lg:gap-y-0 lg:flex-row lg:justify-between">
           <div className="space-y-6 lg:space-y-10 lg:basis-1/2">

@@ -1,4 +1,4 @@
-import { Autoplay, Scrollbar } from "swiper/modules";
+import { Scrollbar } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SlideEight from "./slides/slide-eight";
 import SlideFive from "./slides/slide-five";
@@ -54,11 +54,11 @@ const HeroSection = () => {
         className="mySwiper lg:overflow-hidden lg:h-screen"
         grabCursor={true}
         loop={true}
-        autoplay={true}
+        // autoplay={true}
         scrollbar={{
           hide: true,
         }}
-        modules={[Scrollbar, Autoplay]}
+        modules={[Scrollbar]}
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>

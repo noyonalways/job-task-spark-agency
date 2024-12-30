@@ -2,6 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .scene {
+    width: 360px;
+    height: 200px;
+    perspective: 1000px;
+    position: relative;
+    @apply mb-[300px];
+  }
+  .scene .carousel.keen-slider {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: visible;
+    transform: translateZ(-288px);
+    transform-style: preserve-3d;
+  }
+  .carousel__cell {
+    @apply w-[280px] md:w-[340px] !h-[400px] overflow-hidden rounded-xl cursor-pointer !bg-red-300;
+    position: absolute;
+    left: 10px;
+  }
+}
+
 * {
   scrollbar-width: thin;
 }

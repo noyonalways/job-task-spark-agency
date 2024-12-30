@@ -2,10 +2,10 @@ import avatar from "../../../../../assets/avatar.jpg";
 import box from "../../../../../assets/box.png";
 import handMessage from "../../../../../assets/images/hand-message.png";
 import line from "../../../../../assets/line.png";
-import logo from "../../../../../assets/logo.png";
 import tenYearsWarranty from "../../../../../assets/stickers/10-years.png";
 import google from "../../../../../assets/stickers/google.png";
 import topPro from "../../../../../assets/stickers/top-pro.png";
+import { logos } from "../../../../../constants";
 
 const SlideOne = () => {
   return (
@@ -22,7 +22,7 @@ const SlideOne = () => {
       <div className="container">
         <div className="py-4 lg:py-10 flex flex-col justify-between w-full h-screen">
           <a className="w-full max-w-[200px] lg:max-w-sm inline-block" href="#">
-            <img className="logo" src={logo} alt="Spark Agency Logo" />
+            <img className="logo" src={logos.logo1} alt="Spark Agency Logo" />
           </a>
 
           {/* cards */}

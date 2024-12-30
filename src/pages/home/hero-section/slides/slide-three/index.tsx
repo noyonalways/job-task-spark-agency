@@ -1,4 +1,4 @@
-import logo from "../../../../../assets/logo.png";
+import { logos } from "../../../../../constants";
 
 const SlideThree = () => {
   return (
@@ -7,8 +7,11 @@ const SlideThree = () => {
     >
       <div className="container">
         <div className="py-4 lg:py-10">
-          <a className="w-full max-w-[200px] lg:max-w-sm inline-block" href="#">
-            <img className="logo" src={logo} alt="Spark Agency Logo" />
+          <a
+            className="w-full max-w-[200px] lg:max-w-sm inline-block float-right"
+            href="#"
+          >
+            <img className="logo" src={logos.logo2} alt="Spark Agency Logo" />
           </a>
 
           <div className="flex flex-col justify-center w-full h-screen">
