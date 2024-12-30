@@ -1,5 +1,6 @@
 import "keen-slider/keen-slider.min.css";
 import { KeenSliderPlugin, useKeenSlider } from "keen-slider/react";
+import { useEffect, useRef } from "react";
 import Title from "../../../components/title";
 import { carouselImages } from "../../../constants";
 
@@ -20,7 +21,7 @@ const carousel: KeenSliderPlugin = (slider) => {
 };
 
 const FeaturedSection = () => {
-  const [sliderRef] = useKeenSlider<HTMLDivElement>(
+  const [sliderRef, instanceRef] = useKeenSlider<HTMLDivElement>(
     {
       loop: true,
       selector: ".carousel__cell",
@@ -31,8 +32,28 @@ const FeaturedSection = () => {
     [carousel]
   );
 
+  const autoplayRef = useRef<number | null>(null);
+
+  // Autoplay functionality
+  useEffect(() => {
+    const slider = instanceRef.current;
+    if (!slider) return;
+
+    autoplayRef.current = window.setInterval(() => {
+      if (slider) {
+        slider.next(); // Moves to the next slide
+      }
+    }, 3000); // Change slide every 3 seconds
+
+    return () => {
+      if (autoplayRef.current !== null) {
+        clearInterval(autoplayRef.current);
+      }
+    };
+  }, [instanceRef]);
+
   return (
-    <section className="py-10">
+    <section className="py-10 lg:mb-[360px]">
       <div className="container mb-16">
         <div className="overflow-hidden">
           <div className="wrapper">

@@ -2,10 +2,6 @@ import img1 from "../assets/carousel/1.jpg";
 import img2 from "../assets/carousel/2.jpg";
 import img3 from "../assets/carousel/3.jpg";
 import img4 from "../assets/carousel/4.jpg";
-import img5 from "../assets/carousel/5.jpg";
-import img6 from "../assets/carousel/6.jpg";
-import img7 from "../assets/carousel/7.jpg";
-import img8 from "../assets/carousel/8.jpg";
 
 import logo2 from "../assets/logo-2.png";
 import logo1 from "../assets/logo.png";
@@ -33,22 +29,22 @@ export const carouselImages = [
   },
   {
     id: "carousel-image-005",
-    src: img5,
+    src: img1,
     alt: "Carousel Image 5",
   },
   {
     id: "carousel-image-006",
-    src: img6,
+    src: img2,
     alt: "Carousel Image 6",
   },
   {
     id: "carousel-image-007",
-    src: img7,
+    src: img3,
     alt: "Carousel Image 7",
   },
   {
     id: "carousel-image-008",
-    src: img8,
+    src: img4,
     alt: "Carousel Image 8",
   },
 ];

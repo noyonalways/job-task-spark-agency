@@ -16,7 +16,9 @@ const Footer = () => {
           <p>Leidsekade 57 1016 CX Amsterdam</p>
         </div>
         <div className="flex flex-col">
-          <p>info@dakonderhoudgmk.nl</p>
+          <a href="#" className="hover:underline">
+            info@dakonderhoudgmk.nl
+          </a>
           <a className="hover:underline" href="tel:020261257">
             (020) 26 12 257
           </a>

@@ -7,13 +7,13 @@
     display: flex;
     justify-content: center;
   }
+
   .scene {
-    width: 340px;
-    height: 400px;
     perspective: 1000px;
     position: relative;
-    @apply mb-[100px];
+    @apply w-[360px] h-[300px] lg:h-[478px] mb-[100px];
   }
+
   .scene .carousel.keen-slider {
     width: 100%;
     height: 100%;
@@ -22,10 +22,10 @@
     transform: translateZ(-288px);
     transform-style: preserve-3d;
   }
+
   .carousel__cell {
-    @apply w-[260px] md:w-[340px] !h-[400px] overflow-hidden rounded-xl cursor-pointer;
+    @apply w-[260px] md:w-[360px] lg:h-[478px] overflow-hidden rounded-xl left-[40px] lg:left-[10px] cursor-pointer;
     position: absolute;
-    left: 10px;
   }
 }
 
